@@ -15,7 +15,6 @@
     <java.version>17</java.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-
     <zalando.version>0.27.0</zalando.version>
     <spring-cloud.version>3.1.2</spring-cloud.version>
     <spring-boot.version>2.7.10</spring-boot.version>
@@ -23,13 +22,7 @@
 
   <dependencies>
 
-    <!-- If you remove this dependency, the app starts correctly -->
-    <dependency>
-      <groupId>org.zalando</groupId>
-      <artifactId>problem-spring-web-starter</artifactId>
-      <version>${zalando.version}</version>
-    </dependency>
-
+    <!-- If you remove any of those dependencies, the app starts correctly -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-bus-amqp</artifactId>
@@ -44,6 +37,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>
       <version>${spring-boot.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.zalando</groupId>
+      <artifactId>problem-spring-web-starter</artifactId>
+      <version>${zalando.version}</version>
     </dependency>
 
   </dependencies>
